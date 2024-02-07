@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
      }
  });
 
-/* Main Nav kód - sajnos még nem lettem kész vele! -van egy nav_footer.js:39 Uncaught TypeError: Cannot set properties of null - majd javítani kell, de a működést nem befolyásolja  */ 
+/* Main Nav kód - sajnos még nem lettem kész vele! -van egy nav_footer.js:39 Uncaught TypeError: Cannot set properties of null - majd javítani fogom, de a működést nem befolyásolja*/ 
 
 function myFunction(x) {
     if (x.matches) { 
