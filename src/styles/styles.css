@@ -1,0 +1,1069 @@
+:root {
+    color-scheme: dark;
+    color-scheme: light;
+    --lightGradient: linear-gradient(116.82deg, #EEEEF0 0%, #CCCCD8 100%);
+    --DarkGradient: linear-gradient(116.82deg, #121215 0%, #262629 100%);
+    --white:#FFFFFF;
+    --Black:#121215; 
+    --NavigationBlack: #121215; /* külön kezelem a nav színeket a teszelések miatt*/
+    --NavigationWhite:#FFFFFF;  /* külön kezelem a nav színeket a teszelések miatt*/
+} 
+
+body {
+    background: var(--lightGradient);
+    justify-content: center;
+}
+
+/*Landing - Index page*/
+
+.landing-site {
+    display: flex;
+    /*width: 100%;*/
+    /*height: 300px;*/
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    background: var(--lightGradient);
+}
+
+.header-and-navigation {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header-and-navigation h1 {
+    color: var(--NavigationBlack);
+    font-size: 64px; 
+    font-family: Roboto; 
+    font-weight: 900; 
+    letter-spacing: 15px; 
+}
+
+#border-line {
+    border: 1px;
+    width: 1px;
+    height: 219px;
+    background: var(--NavigationBlack);
+}
+
+.header-and-navigation ul li a {
+    color:var(--NavigationBlack);
+    font-size: 54px;
+    font-family: Roboto;
+    font-weight: 100;
+    word-wrap: break-word;
+    margin-right: 40px;
+    padding: 2px 4px;
+    text-decoration: none;
+}
+
+.header-and-navigation ul li a:hover {
+    color: #000000;
+}
+
+.header-and-navigation ul li {
+    list-style: none;
+}
+
+/* Footer style */
+
+.footer-content {
+    flex-shrink: 0;
+    width: 100%;
+    height: 291px;
+    background: linear-gradient(90deg, #7000A0 0.01%, #A0009B 100%);
+    }
+
+.footer-content span {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 200px;
+    display: flex;
+    height: 291px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    margin-left: 160px;
+    padding: 0px;
+}
+
+
+/*Main - Céginformáció*/
+
+.company-info-site {
+    left: 0px;
+    width: 100%;
+}
+
+.header-and-navigation_main {
+        display: flex;
+        background: linear-gradient(117deg, #EEEEF0 0%, #CCCCD8 100%);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 80px;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+        border-bottom: 1px solid;
+        z-index: 8; 
+}
+
+.header-and-navigation_main header {
+        color: #121215;
+        padding: 0px 32px;
+        font-family: Roboto;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 100;
+        line-height: normal;
+}
+
+.header-and-navigation_main ul li a {
+        display: inline-block;
+        color: #121215;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+}
+
+.header-and-navigation_main ul li a:hover {
+        font-weight: 800;
+}
+
+
+.header-and-navigation_main ul li:visited {
+    color: black;
+}
+
+
+.header-and-navigation_main ul li {
+        list-style: none;
+        display: inline;
+        padding: 30px;
+}
+
+#href_logo {
+    text-decoration: none;
+}
+
+.company-info {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.contentText {
+    position: relative;
+    color: #121215;
+    text-shadow: 0px 0px 15px #FFF;
+    font-family: Roboto;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 727px;
+    height: 282px;
+    top: -235px;
+    left: 526px;
+    z-index: 3; 
+}
+
+.image_notebook img {
+    width: auto;
+    height: auto;
+    position: relative; 
+    top: 151px;
+    left: 80px;
+    z-index: 1; 
+}
+
+.services-link a { 
+    color: #121215;
+    position: relative;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration-line: underline;
+    left: 1130px;
+    top: -162px;
+    z-index: 1; 
+}
+
+
+.opinions-content {
+    top: 702px;
+    padding: 80px;
+    gap: 80px;
+    background-color:#121215;
+    color: #FFF;
+    text-align: center;
+    margin: 0px;
+}
+
+.h2tale {
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 80px;
+}
+
+.reviews {
+    width: 378px;
+    height: 436px;
+    gap: 50px;
+    display:flex;
+    text-align: center;
+}
+
+.review_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 155px;
+}
+
+
+.review div {
+    width: 378px;
+    height: 436px;
+    gap: 55px;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    text-align: left;
+    font-size: 30px;
+    color: #EEEEF0;
+}
+
+.article {
+    width: 100%;
+    padding-top: 80px;
+}
+
+
+.article p {
+    padding-top: 80px;
+    padding-right: 107px;
+    padding-bottom: 30px;
+    padding-left: 107px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    padding-bottom: 80px;
+}
+
+.article h2 {
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.opinions {
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 378px;
+    gap: 50px;
+}
+
+.opinions_name {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: right;
+    color:#D166FF;
+    padding-bottom: 50px;
+}
+
+
+
+.profil {
+    width: 168px;
+    height: 168px;
+    border-radius: 344px;
+
+}
+
+
+/* Kapcsolat */
+
+.second-div {
+    
+        width: 1280px;
+        height: 728px;
+        top: 167px;
+        left: 80px;
+    }
+
+.second-div h2 {
+        font-family: Roboto;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 47px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+ 
+.connect {
+        width: 100%;
+        padding-top: 80px;
+    }
+
+.connect p {
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: italic;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin: auto;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+.connect h2 {
+        font-family: Roboto;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 47px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+.CompanyInfo ul {
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: italic;
+        line-height: 28px;
+        letter-spacing: 0px;
+        margin: auto;
+        padding-left: 110px;
+        padding-right: 80px;    
+    }
+
+.div1 ul li {
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: italic;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin: auto;
+        padding-right: 80px;    
+    }
+
+.large-box {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        margin-right: 80px;
+        }
+        
+.CompanyInfo { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+.map { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+.map img {
+    width: 450px;
+    height: 775px;
+}
+
+.formContainer  {
+            position: relative;
+            width: 100%;
+            background-color: #000000;
+            padding: 80px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+          }
+      
+.form-group {
+            display: flex;
+            gap: 100px;
+            margin-bottom: 20px;
+          }
+      
+.form-group input {
+            width: 349px;
+            height: 50px;
+            box-sizing: border-box;
+            border-bottom: 4px solid;
+            border-color: #A0009B;
+            background-color: #888888;
+            text-align:24px;
+            color: #ffffff;
+          }
+      
+.comment-box {
+            width: 100%;
+            height: 143px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border-bottom: 4px solid;
+            border-color: #A0009B;
+            background-color: #888888;
+            color: #ffffff;
+          }
+      
+.submit-btn {
+            position: sticky;
+            width: 200px;
+            height: 54px;
+            top: 10px;
+            left: 1159px;
+            margin-top: 10px;
+            font-size: 24px;
+            gap: 10px;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            background: linear-gradient(91.93deg, #7000A0 0.76%, #A0009B 99.64%);
+          }
+          
+.form-group label {
+            color: #fff;
+            position: absolute;
+            top: 50px;
+            font-family: Roboto;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0px;
+          }
+
+.messageB {
+            color: #fff;
+            position: absolute;
+            top: 147px;
+            font-family: Roboto;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0px;
+          }
+
+
+/* Szolgaltatasok */
+
+.header2 h2 {
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.big-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 120px;
+    background-color: #fff;
+    padding: 80px;
+    box-sizing: border-box;
+    background: linear-gradient(116.82deg, #EEEEF0 0%, #CCCCD8 100%);
+    
+  }
+
+  .small-box {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .svg-image {
+    width: 123.46px;
+    height: 64px;
+  }  
+
+  .text {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  .description {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+
+  /* Mobil media*/
+
+
+  @media (max-width: 372px) {
+
+    /* Szolgáltatásaink */
+    .big-box {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      padding: 30px;
+    }
+
+    .footer-content {
+        width: 372px;
+        height: 100%;
+        background: linear-gradient(90deg, #7000A0 0.01%, #A0009B 100%);
+        }
+    
+    .footer-content span {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 50px;
+        height: 291px;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        margin-left: 42px;
+        padding: 0px;
+    }
+    
+    .header-and-navigation_main {
+        display: flex;
+        background: linear-gradient(117deg, #EEEEF0 0%, #CCCCD8 100%);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 80px;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+        border-bottom: 1px solid;
+        z-index: 8;
+        padding-bottom: 10px; 
+    }
+
+    .header-and-navigation_main ul li {
+        list-style: none;
+        display: inline;
+        padding: 0px;
+    }
+
+    .header-and-navigation_main ul {
+        padding: 0px;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .header-and-navigation_main header {
+        color: #121215;
+        padding: 0px 32px;
+        font-family: Roboto;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    /* Kapcsolat */
+
+    .connect p {
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: italic;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin: auto;
+        padding-left: 32px;
+        padding-right: 9px;
+    }
+
+    .formContainer  {
+        position: relative;
+        width: 372px;
+        background-color: #000000;
+        padding: 32px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+
+    .form-group {
+        display:inline-block;
+        gap: 100px;
+        margin-bottom: 20px;
+      }
+      
+    .form-group label {
+        color: #fff;
+        position: static;
+        top: 50px;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0px;
+    }
+
+    .form-group input {
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+        border-bottom: 4px solid;
+        border-color: #A0009B;
+        background-color: #888888;
+        text-align:24px;
+        color: #ffffff;
+        margin-bottom: 32px;
+      }
+  
+    .comment-box {
+        width: 100%;
+        height: 143px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border-bottom: 4px solid;
+        border-color: #A0009B;
+        background-color: #888888;
+        color: #ffffff;
+      }
+
+      .submit-btn {
+        position: sticky;
+        width: 200px;
+        height: 54px;
+        top: 10px;
+        left: 95px;
+        margin-top: 10px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(91.93deg, #7000A0 0.76%, #A0009B 99.64%);
+      }
+
+    .messageB {
+        color: #fff;
+        position: absolute;
+        top: 356px;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0px;
+      }
+
+    .large-box {
+        display: inline-block;
+        width: 100%;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        margin-right: 0px;
+    }
+
+    .map { 
+        width: 100%; 
+    }
+    .map img {
+        display: flexbox;
+        width: 276px;
+        height: 399px;
+        padding: 40px;
+    }
+
+    /* Landing mobil */
+
+    .landing-site {
+        display: inline-grid;
+        width: 372px;
+        height: 1024px;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(117deg, #EEEEF0 0%, #CCCCD8 100%);
+    }
+
+    .header-and-navigation {
+        display: inline;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    
+    .header-and-navigation h1 {
+        color: #121215; 
+        font-size: 48px; 
+        font-family: Roboto; 
+        font-weight: 900; 
+        letter-spacing: 10px; 
+        text-align: center;
+    }
+    
+    #border-line {
+        border: 12px;
+        width: 367px;
+        height: 1px;
+        background: #121215;
+        margin-bottom: 50px;
+    }
+    
+    .header-and-navigation ul {
+        text-align: center;
+    }
+
+    .header-and-navigation ul li a {
+        color: #121215;
+        font-size: 40px;
+        font-family: Roboto;
+        font-weight: 100;
+        word-wrap: break-word;
+        margin-right: 40px;
+        padding: 2px 4px;
+        text-decoration: none;
+    }
+    
+    .header-and-navigation ul li a:hover {
+        color: #000000;
+    }
+    
+    .header-and-navigation ul li {
+        list-style: none;
+        margin-bottom: 20px;
+    }
+
+    /* Céginformáció */
+
+    .company-info {
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .services-link a {
+        display: none;
+        color: #121215;
+        position: relative;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        text-decoration-line: underline;
+        left: 234px;
+        top: -64px;
+        z-index: 1;
+    }
+
+    .contentText {
+        position: relative;
+        color: #121215;
+        text-shadow: 0px 0px 15px #FFF;
+        font-family: Roboto;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 303px;
+        height: 120px;
+        top: -169px;
+        left: 28px;
+        z-index: 3; 
+        text-align: center;
+    }
+
+    .image_notebook img {
+        width: 100%;
+        height: 281px;
+        position: relative; 
+        top: 84px;
+        z-index: 1; 
+        left: 0px;
+        margin: 0px;
+    }
+
+    .reviews {
+        width: 100%;
+        height: 436px;
+        gap: 0px;
+        display:inline-block;
+        text-align: center;
+    }
+
+    .review_box {
+        display: inline-block;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 155px;
+        padding: 10px;
+    }
+    
+    
+    .review div {
+        width: 100%;
+        height: 100%;
+        gap: 0px;
+        position: relative;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        text-align: left;
+        font-size: 10px;
+        color: #EEEEF0;
+    }
+
+    .opinions-content {
+        top: 702px;
+        padding: 20px;
+        gap: 10px;
+        background-color:#121215;
+        color: #FFF;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .h2tale {
+        font-family: Roboto;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 47px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding: 13px;
+    }
+
+    .opinions {
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 35px;
+        letter-spacing: 0px;
+        text-align: left;
+        width: 100%;
+        gap: 50px;
+    }
+    
+    .opinions_name {
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: right;
+        color:#D166FF;
+        padding-bottom: 50px;
+    }
+
+    .article {
+        width: 100%;
+        padding-top: 80px;
+    }
+    
+    
+    .article p {
+        font-family: Roboto;
+        font-size: 18px;
+        letter-spacing: 0px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding: 32px;
+    }
+    
+    .article h2 {
+        font-family: Roboto;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 47px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+  }
+
+
+
+  /*1440 media*/
+  @media (min-width: 1440px) {
+    .landing-site {
+        display: flex;
+        width: 1440px;
+        height: 900px;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(117deg, #EEEEF0 0%, #CCCCD8 100%);
+    }
+  }
+
+
+  /* Media colors*/
+
+
+  /*Light */
+
+ @media (prefers-color-scheme: light) {
+
+    body {
+        background: var(--lightGradient)
+    }
+ }
+
+
+
+ @media (prefers-color-scheme: dark) {
+   
+    body {
+        background: var(--DarkGradient)
+   }
+
+   /* Landing color-scheme beállítások */
+   .landing-site {
+        background: var(--DarkGradient);
+    }
+
+    .header-and-navigation h1 {
+        color: var(--NavigationWhite);
+    }
+    
+    #border-line {
+        background: var(--NavigationWhite);
+    }
+    
+    .header-and-navigation ul li a {
+        color:var(--NavigationWhite);
+    }
+
+
+    /* Navigációs menü color-scheme beállítások */
+
+    .header-and-navigation_main {
+        background: var(--NavigationBlack);
+        border-color: var(--NavigationWhite);
+    }
+
+    .header-and-navigation_main header {
+        color:var(--NavigationWhite);
+    }
+
+    .header-and-navigation_main ul li a {
+        color: var(--NavigationWhite);
+    }
+
+
+    /* Céginformáció color-scheme beállítások */
+
+    .contentText {
+        color: var(--white);
+    }
+
+    .services-link a {
+        color: var(--white);
+    }
+
+    .opinions-content {
+        background-color: var(--white);
+
+    }
+
+    .h2tale {
+        color: var(--Black);
+    }
+
+    .opinions-content {
+        color: var(--Black);
+    }
+
+    .article h2 {
+        color: var(--white)
+    }
+
+    .article p {
+        color: var(--white) 
+    }
+
+    /* Szolgáltatások color-scheme beállításai */
+
+    .header2 h2 {
+        color: var(--white);
+    }
+
+    .big-box {
+        background: var(--DarkGradient);
+        color: var(--white);
+    }
+
+    .svg-image {
+        filter: brightness(0) invert(1);
+    }
+
+    /* Kapcsolat color-scheme beállításai */
+
+    .connect h2 {
+        color: var(--white);
+    }
+
+    .CompanyInfo p {
+        color:var(--white)
+    }
+
+    .CompanyInfo ul {
+        color: var(--white);
+    }
+
+    .formContainer {
+        background-color: var(--white);
+    }
+
+    .form-group label {
+        color: var(--Black);
+    }
+
+    .messageB {
+        color: var(--Black);
+    }
+
+ }
