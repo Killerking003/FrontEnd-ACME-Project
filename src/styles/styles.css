@@ -538,10 +538,15 @@ body {
   }
 
 
+
+
+
+
+
   /* Mobil media*/
 
 
-  @media (max-width: 372px) {
+  @media (max-width: 376px) {
 
     /* Szolgáltatásaink */
     .big-box {
@@ -551,7 +556,7 @@ body {
     }
 
     .footer-content {
-        width: 372px;
+        width: 100%;
         height: 100%;
         background: linear-gradient(90deg, #7000A0 0.01%, #A0009B 100%);
         }
@@ -625,7 +630,7 @@ body {
 
     .formContainer  {
         position: relative;
-        width: 372px;
+        width: 100%;
         background-color: #000000;
         padding: 32px;
         box-sizing: border-box;
@@ -716,14 +721,14 @@ body {
         display: flexbox;
         width: 276px;
         height: 399px;
-        padding: 40px;
+        padding: 44px;
     }
 
     /* Landing mobil */
 
     .landing-site {
         display: inline-grid;
-        width: 372px;
+        width: 100%;
         height: 1024px;
         justify-content: center;
         align-items: center;
